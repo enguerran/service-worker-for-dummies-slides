@@ -90,9 +90,9 @@ self.addEventListener("fetch", (event) => {
 layout: center
 ---
 
-<div class="prose">
-<figure class="">
-<video autoplay="" controls="" loop="" muted="">
+<div class="">
+<figure>
+<video autoplay loop muted>
 <source src="https://storage.googleapis.com/web-dev-uploads/video/jL3OLOhcWUQDnR4XjewLBx4e3PC3/rdeulhDt9H1tqOdqh9Cj.mp4" type="video/mp4" />
 </video>
 </figure>
@@ -101,3 +101,15 @@ layout: center
 ---
 
 <App />
+
+---
+layout: center
+---
+
+# Links
+
+- the studious entry point https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker
+- and its sidekick the how-to https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers
+- the story well told https://web.dev/service-worker-mindset/
+- the didactic and so good game https://serviceworkies.com/
+- the essential toolbox https://developer.chrome.com/docs/workbox/

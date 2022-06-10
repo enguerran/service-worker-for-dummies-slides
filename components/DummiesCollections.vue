@@ -10,6 +10,7 @@
       :imageWidth="collection.data.image.width"
       :imageHeight="collection.data.image.height"
       :description="collection.data.description"
+      :messageFromSW="collection.messageFromSW ?? undefined"
     />
   </div>
 </template>
@@ -24,6 +25,7 @@ export default {
   },
   props: {
     collections: Array,
+    messages: Array,
   },
 };
 </script>

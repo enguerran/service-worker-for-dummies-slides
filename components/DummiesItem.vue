@@ -1,7 +1,7 @@
 <template>
   <a href="#" class="group">
     <div
-      class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8"
+      class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8 relative"
     >
       <img
         :src="imageSrc"
@@ -10,6 +10,12 @@
         :width="imageWidth"
         :height="imageHeight"
       />
+      <p
+        v-if="messageFromSW"
+        class="absolute top-0 p-2 bg-gray-700 text-gray-100"
+      >
+        {{ messageFromSW }}
+      </p>
     </div>
     <h3 class="mt-4 text-lg text-gray-900">{{ title }}</h3>
   </a>
@@ -24,6 +30,7 @@ export default {
     imageWidth: Number,
     imageHeight: Number,
     description: String,
+    messageFromSW: String,
   },
 };
 </script>
